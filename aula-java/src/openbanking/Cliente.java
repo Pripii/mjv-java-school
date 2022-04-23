@@ -7,6 +7,13 @@ public class Cliente {
 	private String cpfCnpj;
 	private Movimentacao movimentacao;
 	
+	//se atentar a ordem do construtor
+		Cliente(String nome, String cpfCnpj, Movimentacao movimentacao) {
+			this.nome = nome;
+			this.cpfCnpj = cpfCnpj;
+			this.movimentacao = movimentacao;
+		}
+	
 	//fazer get e set
 	public String getNome() {
 		return nome;

@@ -10,12 +10,20 @@ public class Movimentacao {
 	private TipoMovimentacao tipomovimentacao;
 	private Boolean estorno;
 	
+	//se atentar a ordem do construtor
+	Movimentacao(LocalDate data, Double valor, TipoMovimentacao tipomovimentacao, Boolean estorno) {
+		this.data = data;
+		this.valor = valor;
+		this.tipomovimentacao = tipomovimentacao;
+		this.estorno = estorno;
+	}
+	
 	//fazer get e set
 	public LocalDate getData() {
 		return data;
 	} 
 	
-	public void setData (LocalData data) {
+	public void setData (LocalDate data) {
 		this.data = data;
 	}
 	
