@@ -1,5 +1,15 @@
 
 public enum TipoServico {
-	AGUA,
-	LUZ
+	AGUA ("A"),
+	LUZ ("L");
+	
+	private String sigla;
+	
+	TipoServico(String sigla){
+		this.sigla = sigla;
+	}
+	
+	private String getSigla() {
+		return sigla;
+	}
 }
