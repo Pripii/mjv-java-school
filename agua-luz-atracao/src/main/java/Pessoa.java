@@ -7,6 +7,16 @@ public class Pessoa {
 	private Endereco endereco;
 	private Registro registro;
 	
+	public Pessoa(String nome, String cpf, String rg, String celular, Endereco endereco, Registro registro) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.rg = rg;
+		this.celular = celular;
+		this.endereco = endereco;
+		this.registro = registro;
+	}
+	
 	public String getNome() {
 		return nome;
 	}

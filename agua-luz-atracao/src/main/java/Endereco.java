@@ -9,6 +9,19 @@ public class Endereco {
 	private String cep;
 	private SiglaIso siglaiso;
 	
+	public Endereco(String logadouro, int numero, String complemento, String bairro, String cidade, String uf,
+			String cep, SiglaIso siglaiso) {
+		super();
+		this.logadouro = logadouro;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.uf = uf;
+		this.cep = cep;
+		this.siglaiso = siglaiso;
+	}
+	
 	public String getLogadouro() {
 		return logadouro;
 	}

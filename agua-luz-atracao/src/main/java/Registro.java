@@ -9,6 +9,16 @@ public class Registro {
 	private TipoServico tiposervico;
 	private TipoNotificacao tiponotificacao;
 	
+	public Registro(Long protocolo, LocalDate data, LocalTime hora, Double valor, TipoServico tiposervico,
+			TipoNotificacao tiponotificacao) {
+		super();
+		this.protocolo = protocolo;
+		this.data = data;
+		this.hora = hora;
+		this.valor = valor;
+		this.tiposervico = tiposervico;
+		this.tiponotificacao = tiponotificacao;
+	}
 	public Long getProtocolo() {
 		return protocolo;
 	}
