@@ -6,14 +6,14 @@ import service.TipoNotificacao;
 import service.TipoServico;
 
 public class Registro {
-	private Long protocolo;
+	private String protocolo;
 	private LocalDate data;
 	private LocalTime hora;
 	private Double valor;
 	private TipoServico tiposervico;
 	private TipoNotificacao tiponotificacao;
 	
-	public Registro(Long protocolo, LocalDate data, LocalTime hora, Double valor, TipoServico tiposervico,
+	public Registro(String protocolo, LocalDate data, LocalTime hora, Double valor, TipoServico tiposervico,
 			TipoNotificacao tiponotificacao) {
 		super();
 		this.protocolo = protocolo;
@@ -23,10 +23,10 @@ public class Registro {
 		this.tiposervico = tiposervico;
 		this.tiponotificacao = tiponotificacao;
 	}
-	public Long getProtocolo() {
+	public String getProtocolo() {
 		return protocolo;
 	}
-	public void setProtocolo(Long protocolo) {
+	public void setProtocolo(String protocolo) {
 		this.protocolo = protocolo;
 	}
 	public LocalDate getData() {
