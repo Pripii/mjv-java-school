@@ -1,3 +1,4 @@
+package service;
 
 public enum TipoNotificacao {
 	SMS ("S"),

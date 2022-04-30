@@ -1,3 +1,5 @@
+package model;
+import service.SiglaIso;
 
 public class Endereco {
 	private String logadouro; 

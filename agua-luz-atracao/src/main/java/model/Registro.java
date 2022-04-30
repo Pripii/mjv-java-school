@@ -1,5 +1,9 @@
+package model;
 import java.time.LocalDate;
 import java.time.LocalTime;
+
+import service.TipoNotificacao;
+import service.TipoServico;
 
 public class Registro {
 	private Long protocolo;
