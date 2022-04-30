@@ -1,4 +1,4 @@
-package service;
+package enums;
 
 public enum TipoServico {
 	AGUA ("A"),

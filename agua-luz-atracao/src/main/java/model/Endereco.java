@@ -1,6 +1,6 @@
 package model;
-import service.SiglaIso;
-import service.TipoServico;
+import enums.SiglaIso;
+import enums.TipoServico;
 
 public class Endereco {
 	private String logadouro; 

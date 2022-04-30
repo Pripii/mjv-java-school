@@ -2,8 +2,8 @@ package model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-import service.TipoNotificacao;
-import service.TipoServico;
+import enums.TipoNotificacao;
+import enums.TipoServico;
 
 public class Registro {
 	private String protocolo;
