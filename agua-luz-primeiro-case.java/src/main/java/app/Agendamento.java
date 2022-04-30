@@ -1,4 +1,4 @@
-package Util;
+package app;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -29,7 +29,7 @@ public class Agendamento {
 		 
 		 Pessoa client = new Pessoa();
 		 client.setNome("Priscilla Aniboleti");
-		 client.setCpf("797.979.797.-97");
+		 client.setCpf("797.979.797-97");
 		 client.setEndereco(address);
 		 client.setServicos(service);
 		 

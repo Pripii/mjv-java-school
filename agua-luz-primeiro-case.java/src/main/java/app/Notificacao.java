@@ -1,4 +1,4 @@
-package Util;
+package app;
 import model.Pessoa;
 
 public class Notificacao {
