@@ -8,6 +8,10 @@ public class Pessoa {
 	private Endereco endereco;
 	private Registro registro;
 	
+	public Pessoa() {
+		
+	}
+	
 	public Pessoa(String nome, String cpf, String rg, String celular, Endereco endereco, Registro registro) {
 		super();
 		this.nome = nome;

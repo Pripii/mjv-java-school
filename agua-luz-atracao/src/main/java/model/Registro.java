@@ -10,18 +10,22 @@ public class Registro {
 	private LocalDate data;
 	private LocalTime hora;
 	private Double valor;
-	private TipoServico tiposervico;
-	private TipoNotificacao tiponotificacao;
+	private TipoServico tipoServico;
+	private TipoNotificacao tipoNotificacao;
 	
-	public Registro(String protocolo, LocalDate data, LocalTime hora, Double valor, TipoServico tiposervico,
-			TipoNotificacao tiponotificacao) {
+	public Registro () {
+		
+	}
+	
+	public Registro(String protocolo, LocalDate data, LocalTime hora, Double valor, TipoServico tipoServico,
+			TipoNotificacao tipoNotificacao) {
 		super();
 		this.protocolo = protocolo;
 		this.data = data;
 		this.hora = hora;
 		this.valor = valor;
-		this.tiposervico = tiposervico;
-		this.tiponotificacao = tiponotificacao;
+		this.tipoServico = tipoServico;
+		this.tipoNotificacao = tipoNotificacao;
 	}
 	public String getProtocolo() {
 		return protocolo;
@@ -47,17 +51,17 @@ public class Registro {
 	public void setValor(Double valor) {
 		this.valor = valor;
 	}
-	public TipoServico getTiposervico() {
-		return tiposervico;
+	public TipoServico getTipoServico() {
+		return tipoServico;
 	}
-	public void setTiposervico(TipoServico tiposervico) {
-		this.tiposervico = tiposervico;
+	public void setTipoServico(TipoServico tipoServico) {
+		this.tipoServico = tipoServico;
 	}
-	public TipoNotificacao getTiponotificacao() {
-		return tiponotificacao;
+	public TipoNotificacao getTipoNotificacao() {
+		return tipoNotificacao;
 	}
-	public void setTiponotificacao(TipoNotificacao tiponotificacao) {
-		this.tiponotificacao = tiponotificacao;
+	public void setTipoNotificacao(TipoNotificacao tipoNotificacao) {
+		this.tipoNotificacao = tipoNotificacao;
 	}
 	
 	

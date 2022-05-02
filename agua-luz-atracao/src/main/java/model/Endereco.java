@@ -1,6 +1,5 @@
 package model;
 import enums.SiglaIso;
-import enums.TipoServico;
 
 public class Endereco {
 	private String logadouro; 
@@ -9,10 +8,13 @@ public class Endereco {
 	private String bairro;
 	private String cidade;
 	private String cep;
-	private SiglaIso siglaiso;
+	private SiglaIso siglaIso;
 	
+	public Endereco (){
+		
+	}
 	public Endereco(String logadouro, int numero, String complemento, String bairro, String cidade,
-			String cep, SiglaIso siglaiso) {
+			String cep, SiglaIso siglaIso) {
 		super();
 		this.logadouro = logadouro;
 		this.numero = numero;
@@ -20,7 +22,7 @@ public class Endereco {
 		this.bairro = bairro;
 		this.cidade = cidade;
 		this.cep = cep;
-		this.siglaiso = siglaiso;
+		this.siglaIso = siglaIso;
 	}
 	
 	public String getLogadouro() {
@@ -59,10 +61,10 @@ public class Endereco {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-	public SiglaIso getSiglaiso() {
-		return siglaiso;
+	public SiglaIso getSiglaIso() {
+		return siglaIso;
 	}
-	public void setSiglaiso(SiglaIso siglaiso) {
-		this.siglaiso = siglaiso;
+	public void setSiglaIso(SiglaIso siglaIso) {
+		this.siglaIso = siglaIso;
 	}
 }
