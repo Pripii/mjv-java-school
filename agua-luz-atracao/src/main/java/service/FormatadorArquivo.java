@@ -52,4 +52,17 @@ public class FormatadorArquivo {
 		}
 		return builder.toString();
 	}
+	
+	/*public String menssage(Pessoa client) {
+
+			StringBuilder stringBuilder = new StringBuilder();	
+			stringBuilder.append("\nLogradouro: " + client.getEndereco().getLogadouro());
+			stringBuilder.append("\nComplemento: " + client.getEndereco().getComplemento());
+			stringBuilder.append("\nBairro: " + client.getEndereco().getBairro());
+			stringBuilder.append("\nCidade: " + client.getEndereco().getCidade());
+			stringBuilder.append("\nCep: " + client.getEndereco().getCep());
+		
+			return stringBuilder.toString();
+	}
+	 */
 }

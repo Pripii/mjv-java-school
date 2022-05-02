@@ -44,4 +44,21 @@ public class GerarArquivo {
 			e.printStackTrace();
 		}
 	}
+	
+	/*
+	    public static void geraMenssage(String conteudo, String nomeArquivo) {
+		
+		File file = new File("C:\\School MJV\\mjv-java-school\\agua-luz-output");
+
+		file.mkdirs();
+
+		Path path = Paths.get(file.getAbsolutePath(), nomeArquivo);
+
+		try {
+			Files.write(path, conteudo.getBytes(StandardCharsets.UTF_8));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	*/
 }
