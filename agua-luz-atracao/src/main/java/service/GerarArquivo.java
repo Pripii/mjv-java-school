@@ -1,35 +1,28 @@
 package service;
 
-import java.util.List;
-
-import model.Pessoa;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class GerarArquivo {
-	public void txt(List<Pessoa> pessoas) {
+	public static void geraCsv(String conteudo, String nomeArquivo) {
+		File file = new File("C:\\School MJV\\mjv-java-school\\agua-luz-output");
 		
-	}
-	public void csv(List<Pessoa> pessoas) { //a delimitacao do csv e feita por ';'
-		StringBuilder builder = new StringBuilder();
-		for(Pessoa pessoa: pessoas) { //para cada pessoa 'pessoa' dentro de pessoas eu vou fazer tal coisa
-			builder.append(pessoa.getCpf() + ";");
-			builder.append(pessoa.getRg() + ";");
-			builder.append(pessoa.getNome() + ";");
-			builder.append(pessoa.getCelular() + ";");
-			builder.append(pessoa.getEndereco().getLogadouro() + ";");
-			builder.append(pessoa.getEndereco().getNumero() + ";");
-			builder.append(pessoa.getEndereco().getComplemento() + ";");
-			builder.append(pessoa.getEndereco().getBairro() + ";");
-			builder.append(pessoa.getEndereco().getCidade() + ";");
-			builder.append(pessoa.getEndereco().getUf() + ";");
-			builder.append(pessoa.getEndereco().getCep() + ";");
-			builder.append(pessoa.getEndereco().getSiglaIso() + ";");
-			builder.append(pessoa.getRegistro().getData() + ";");
-			builder.append(pessoa.getRegistro().getHora() + ";");
-			builder.append(pessoa.getRegistro().getTipoServico() + ";");
-			builder.append(pessoa.getRegistro().getValor() + ";");
-			builder.append(pessoa.getRegistro().getTipoNotificacao() + ";");
-			 
-			
+		//verificando se existe o diretorio ou nao
+		file.mkdirs(); 
+		
+		//pegando o caminho absoluto do aquivo e o nome para salvar dentro do path
+		Path path = Paths.get(file.getAbsolutePath(), nomeArquivo);  //interface nao da o new
+		
+		//"java tenta esse bloco de codigo, se nao der certo vc pega e printa isso pra mim"
+		try {
+			Files.write(path, conteudo.getBytes(StandardCharsets.UTF_8)); //estou criando meu arquivo, passando o caminho e tranformando meu conteudo para byte para o java separar a memoria do aquivo
+		} catch(IOException e) {
+			e.printStackTrace();
 		}
-	} 
+	}
+	
 }
