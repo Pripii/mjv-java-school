@@ -2,17 +2,34 @@ package service;
 
 import java.util.List;
 
-import model.Registro;
+import model.Pessoa;
 
 public class GerarArquivo {
-	public void txt(List<Registo> registros) {
+	public void txt(List<Pessoa> pessoas) {
 		
 	}
-	public void csv(List<Registo> registros) {
+	public void csv(List<Pessoa> pessoas) { //a delimitacao do csv e feita por ';'
 		StringBuilder builder = new StringBuilder();
-		for(Registro r: registros) {
-			builder.append(r.getClient().getNome() + ";");
-			builder.append(r.getClient().getCpf() + ";");
+		for(Pessoa pessoa: pessoas) { //para cada pessoa 'pessoa' dentro de pessoas eu vou fazer tal coisa
+			builder.append(pessoa.getCpf() + ";");
+			builder.append(pessoa.getRg() + ";");
+			builder.append(pessoa.getNome() + ";");
+			builder.append(pessoa.getCelular() + ";");
+			builder.append(pessoa.getEndereco().getLogadouro() + ";");
+			builder.append(pessoa.getEndereco().getNumero() + ";");
+			builder.append(pessoa.getEndereco().getComplemento() + ";");
+			builder.append(pessoa.getEndereco().getBairro() + ";");
+			builder.append(pessoa.getEndereco().getCidade() + ";");
+			builder.append(pessoa.getEndereco().getUf() + ";");
+			builder.append(pessoa.getEndereco().getCep() + ";");
+			builder.append(pessoa.getEndereco().getSiglaIso() + ";");
+			builder.append(pessoa.getRegistro().getData() + ";");
+			builder.append(pessoa.getRegistro().getHora() + ";");
+			builder.append(pessoa.getRegistro().getTipoServico() + ";");
+			builder.append(pessoa.getRegistro().getValor() + ";");
+			builder.append(pessoa.getRegistro().getTipoNotificacao() + ";");
+			 
+			
 		}
-	}
+	} 
 }

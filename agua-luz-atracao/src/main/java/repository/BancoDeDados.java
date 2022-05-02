@@ -14,9 +14,9 @@ import model.Registro;
 
 public class BancoDeDados {
 	
-	private List<Registro> registros = new ArrayList<Registro>();
+	private List<Pessoa> pessoas = new ArrayList<Pessoa>();
 	
-	public List<Registro> listar() {
+	public List<Pessoa> listar() {
 		
 		Endereco address = new Endereco();
 		 address.setLogadouro("Rua Caldeirão Furado");
@@ -24,6 +24,7 @@ public class BancoDeDados {
 		 address.setComplemento("casa 07");
 		 address.setBairro("Beco Diagonal");
 		 address.setCidade("Londres");
+		 address.setUf("HP");
 		 address.setCep("7997");
 		 address.setSiglaIso(SiglaIso.NORUEGA);
 		 
@@ -43,8 +44,8 @@ public class BancoDeDados {
 		 client.setEndereco(address);
 		 client.setRegistro(record);
 		 
-		 registros.add(record); //add e um metodo de arraylist do java para 'puxar' uma lista
-		 return registros; 
+		 pessoas.add(client); //add e um metodo de arraylist do java para 'salvar' alguma coisa 
+		 return pessoas; 
 	
 	}
 }
