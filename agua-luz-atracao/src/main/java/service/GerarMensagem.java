@@ -12,8 +12,10 @@ public class GerarMensagem {
 		 	
 		 BancoDeDados bancoDeDados = new BancoDeDados();
 		 	List<Pessoa> conteudo = bancoDeDados.listar();
-		 	String conteudoFormatado = formatadorArquivo.csv(conteudo);
-		 	GerarArquivo.geraCsv(conteudoFormatado, "agua-luz-contratos.csv");
+		 	String conteudoFormatadocsv = formatadorArquivo.csv(conteudo);
+		 	GerarArquivo.geraCsv(conteudoFormatadocsv, "agua-luz-contratos.csv");
+		 	String conteudoFormatadotxt = formatadorArquivo.txt(conteudo);
+		 	GerarArquivo.geraCsv(conteudoFormatadotxt, "agua-luz-contratos.txt");
 		 	
 		 	
 		 

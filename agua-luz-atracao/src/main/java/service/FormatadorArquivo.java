@@ -5,12 +5,33 @@ import java.util.List;
 import model.Pessoa;
 
 public class FormatadorArquivo {
-	public void txt(List<Pessoa> pessoas) {
-		
+	public String txt(List<Pessoa> pessoas) {
+		StringBuilder sbuilder = new StringBuilder();
+		for (Pessoa pessoa : pessoas) { 
+			sbuilder.append(pessoa.getCpf());
+			sbuilder.append(pessoa.getRg());
+			sbuilder.append(pessoa.getNome());
+			sbuilder.append(pessoa.getCelular());
+			sbuilder.append(pessoa.getEndereco().getLogadouro());
+			sbuilder.append(pessoa.getEndereco().getNumero());
+			sbuilder.append(pessoa.getEndereco().getComplemento());
+			sbuilder.append(pessoa.getEndereco().getBairro());
+			sbuilder.append(pessoa.getEndereco().getCidade());
+			sbuilder.append(pessoa.getEndereco().getUf());
+			sbuilder.append(pessoa.getEndereco().getCep());
+			sbuilder.append(pessoa.getEndereco().getSiglaIso());
+			sbuilder.append(pessoa.getRegistro().getData());
+			sbuilder.append(pessoa.getRegistro().getHora());
+			sbuilder.append(pessoa.getRegistro().getTipoServico());
+			sbuilder.append(pessoa.getRegistro().getValor());
+			sbuilder.append(pessoa.getRegistro().getTipoNotificacao());
+		}
+		return sbuilder.toString();
 	}
-	public String csv(List<Pessoa> pessoas) { //a delimitacao do csv e feita por ';'
+
+	public String csv(List<Pessoa> pessoas) { // a delimitacao do csv e feita por ';'
 		StringBuilder builder = new StringBuilder();
-		for(Pessoa pessoa: pessoas) { //para cada pessoa 'pessoa' dentro de pessoas eu vou fazer tal coisa
+		for (Pessoa pessoa : pessoas) { // para cada pessoa 'pessoa' dentro de pessoas eu vou fazer tal coisa
 			builder.append(pessoa.getCpf() + ";");
 			builder.append(pessoa.getRg() + ";");
 			builder.append(pessoa.getNome() + ";");
@@ -30,5 +51,5 @@ public class FormatadorArquivo {
 			builder.append(pessoa.getRegistro().getTipoNotificacao());
 		}
 		return builder.toString();
-	} 
+	}
 }
