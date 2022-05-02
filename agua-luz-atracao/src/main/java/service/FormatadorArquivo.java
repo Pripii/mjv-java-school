@@ -52,6 +52,10 @@ public class FormatadorArquivo {
 		}
 		return builder.toString();
 	}
+	//criando metodo para formatacao
+	//public static String formatadorAtributos(String atributo, int delimitador) {
+		//String atributoFormatado = atributo.substring(0, delimitador);
+	}
 	
 	/*public String menssage(Pessoa client) {
 
