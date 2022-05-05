@@ -55,7 +55,7 @@ public class FormatadorArquivo {
 	//criando metodo para formatacao
 	//public static String formatadorAtributos(String atributo, int delimitador) {
 		//String atributoFormatado = atributo.substring(0, delimitador);
-	}
+	
 	
 	/*public String menssage(Pessoa client) {
 
@@ -70,3 +70,4 @@ public class FormatadorArquivo {
 	}
 	 */
 }
+
