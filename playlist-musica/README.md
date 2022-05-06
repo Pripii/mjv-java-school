@@ -1,14 +1,12 @@
-# Read Me First
-The following was discovered as part of building this project:
+# Projeto Final MJV Java School
+O projeto consiste em uma playlist de músicas, desenvolvida através de uma Api Java com Spring Boot.
 
-* The original package name 'com.mjv.musica.playlist-musica.api' is invalid and this project uses 'com.mjv.musica.playlistmusica.api' instead.
+# Tecnologias utilizadas:
+- Java 18
+- Eclipse IDE
+- Spring Boot
 
-# Getting Started
+# Diagrama de classes (UML)
 
-### Reference Documentation
-For further reference, please consider the following sections:
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.6.7/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.6.7/maven-plugin/reference/html/#build-image)
 
