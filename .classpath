@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="agua-luz-atracao/src/main/java"/>
+	<classpathentry kind="src" path="agua-luz-primeiro-case.java/src/main/java"/>
+	<classpathentry kind="src" path="aula-java/src"/>
+	<classpathentry kind="src" path="java-explorer/src/main/java"/>
+	<classpathentry kind="src" path="pedido-fast/src/main/java"/>
+	<classpathentry kind="output" path="agua-luz-atracao/target/classes"/>
+</classpath>
