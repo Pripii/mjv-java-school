@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mjv</groupId>
-	<artifactId>projeto-final</artifactId>
+	<artifactId>playlist-music</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>projeto-final</name>
-	<description>Projeto final MJV School</description>
+	<name>playlist-music</name>
+	<description>Projeto final MJV School JAVA</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>

@@ -1,13 +1,13 @@
-package com.mjv.playlist.api;
+package com.mjv.playlist.music;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProjetoFinalApplication {
+public class PlaylistMusicApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjetoFinalApplication.class, args);
+		SpringApplication.run(PlaylistMusicApplication.class, args);
 	}
 
 }
