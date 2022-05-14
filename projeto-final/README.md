@@ -18,3 +18,6 @@ Desenvolvimento de uma API com Spring Boot para criação de Playlists de Músic
 
 > Postgres 
 
+<h2> UML - Diagrama de Classes </h2>
+
+![alt text](/umlPlaylist.png)
