@@ -12,12 +12,12 @@ Desenvolvimento de uma API com Spring Boot para criação de Playlists de Músic
 
 > Maven 
 
-> Spring Boot 
+> [Spring Boot](https://spring.io/)  
 
-> App.diagrams 
+> [App.diagrams](https://app.diagrams.net/)
 
 > Postgres 
 
-<h2> UML - Diagrama de Classes </h2>
+<h2>📝 UML 📝</h2>
 
-![alt text](/umlPlaylist.png)
+![alt uml](/uml.png)
