@@ -14,4 +14,28 @@ public class Playlist {
 
     @OneToOne //mostrando ao jpa o relacionamento entre entidades, nesse caso, um para um
     private ListaMusicas lista;
+
+    public Integer getIdPlaylist() {
+        return idPlaylist;
+    }
+
+    public void setIdPlaylist(Integer idPlaylist) {
+        this.idPlaylist = idPlaylist;
+    }
+
+    public String getNomePlaylist() {
+        return nomePlaylist;
+    }
+
+    public void setNomePlaylist(String nomePlaylist) {
+        this.nomePlaylist = nomePlaylist;
+    }
+
+    public ListaMusicas getLista() {
+        return lista;
+    }
+
+    public void setLista(ListaMusicas lista) {
+        this.lista = lista;
+    }
 }
