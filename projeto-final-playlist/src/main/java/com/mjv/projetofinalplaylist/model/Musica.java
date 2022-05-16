@@ -10,9 +10,16 @@ public class Musica {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idMusica;
+
+    @Column(length = 20)
     private String Titulo;
+
     private Double Duração;
+
+    @Column(length = 40)
     private String Autores;
+
+    @Enumerated(EnumType.STRING) //salvando o proprio valor literal, se o generoMusical for Pop, vai ter uma coluna do tipo genero e vai salvar pop
     private GeneroMusical genero;
 
     public Integer getIdMusica() {

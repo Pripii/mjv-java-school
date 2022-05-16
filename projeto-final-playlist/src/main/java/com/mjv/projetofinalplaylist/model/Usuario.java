@@ -10,10 +10,13 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY) //é para o Id seguir alguma estratégia de criação automatica do meu Id, ou seja, é um autoincremento
     private Integer idUsuario;
 
+    @Column(length = 20) //modelando o banco de dados para limitar o tamanho do nome
     private String nomeUsuario;
-    private String email;
 
-    @OneToMany //mostrando ao jpa o relacionamento entre entidades, nesse caso, um para muitos
+    private String email; //não é preciso nomear as colunas com @Column(name=...) pq o jpa já vai gerar a coluna com o nome do atributo
+
+    @ManyToOne(cascade = CascadeType.ALL)//mostrando ao jpa o relacionamento entre entidades, nesse caso, muitos para um
+    @JoinColumn(name = "id_playlist") //especifica uma coluna para ingressar em uma associação de entidade ou coleção de elementos
     private Playlist playlist;
 
     public Integer getIdUsuario() {

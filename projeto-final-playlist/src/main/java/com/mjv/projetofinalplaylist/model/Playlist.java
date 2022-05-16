@@ -1,6 +1,7 @@
 package com.mjv.projetofinalplaylist.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "playlist")
@@ -10,10 +11,21 @@ public class Playlist {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idPlaylist;
+
+    @Column(length = 20)
     private String nomePlaylist;
 
-    @OneToOne //mostrando ao jpa o relacionamento entre entidades, nesse caso, um para um
-    private ListaMusicas lista;
+    @OneToMany(cascade = CascadeType.ALL) //mostrando ao jpa o relacionamento entre entidades, nesse caso, um parA MUITOS
+    @JoinColumn(name = "playlist_id")
+    private List<Musica> musicas;
+
+    public List<Musica> getMusicas() {
+        return musicas;
+    }
+
+    public void setMusicas(List<Musica> musicas) {
+        this.musicas = musicas;
+    }
 
     public Integer getIdPlaylist() {
         return idPlaylist;
@@ -29,13 +41,5 @@ public class Playlist {
 
     public void setNomePlaylist(String nomePlaylist) {
         this.nomePlaylist = nomePlaylist;
-    }
-
-    public ListaMusicas getLista() {
-        return lista;
-    }
-
-    public void setLista(ListaMusicas lista) {
-        this.lista = lista;
     }
 }
