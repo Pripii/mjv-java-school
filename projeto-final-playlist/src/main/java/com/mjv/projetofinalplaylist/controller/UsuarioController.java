@@ -19,8 +19,13 @@ public class UsuarioController {
         repository.save(usuario);
     }
 
-    @GetMapping//tratam das solicitações HTTP GET que correspondem a uma determinada expressão de URI
+    @GetMapping//vai pegar requisicoes do usuario
     public List<Usuario> listar(){
         return repository.findAll();
+    }
+
+    @DeleteMapping //vai deletar, quando solicitado, requisicoes desse usuario
+    public void removerUsuario(Integer idUsuario) {
+        repository.deleteById(idUsuario);
     }
 }

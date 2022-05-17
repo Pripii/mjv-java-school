@@ -23,4 +23,10 @@ public class MusicaController {
     public List<Musica> listar(){
         return repository.findAll();
     }
+
+    @DeleteMapping
+    public void removerMusica(Integer idMusica) {
+        repository.deleteById(idMusica);
+    }
+
 }

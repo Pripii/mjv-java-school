@@ -17,5 +17,9 @@ public class PlaylistController {
         repository.save(playlist);
     }
 
+    @DeleteMapping
+    public void removerPlaylist(Integer idPlaylist) {
+        repository.deleteById(idPlaylist);
+    }
 
 }
